@@ -46,15 +46,16 @@
     </div>
     <div class="detail">
         <button class="contact"> CONTACTEZ NOUS</button>
-        <p>Notre entreprise se distingue par son professionnalisme, sa rapidité d'intervention et la qualité exceptionnelle de ses équipements.
+        <p>Notre entreprise se distingue par son professionnalisme, sa rapidité d'intervention et la qualité de ses équipements.
         <br>
         <br>
-        Notre équipe d'experts qualifiés s'engage à fournir des solutions sur mesure, adaptées à vos besoins spécifiques, en garantissant une installation rapide et efficace. Chez Paris Surveillance, nous utilisons uniquement des produits de haute qualité pour assurer la sécurité optimale de vos locaux.
-        <br>
-        <br>
-        Faites confiance à Paris Surveillance pour une surveillance fiable et une tranquillité d'esprit totale.</p>
+        La sécurité de votre établissement est une priorité. Les alarmes jouent un rôle essentiel dans la prévention des vols et des dégradations, en vous offrant une protection dissuasive pour la sécurité de vos employés, de vos biens, de votre commerce et la tranquillité d’esprit.
+        
 
-        <p>GALLERY PHOTO</p>
+    </div>
+
+    <div class="gallery">
+        <p>gallery</p>
     </div>
     </main>
     

@@ -28,14 +28,24 @@
 
     <div class="descript">
         <div class="wordkey">
-            <p class="vidéosurv" >Vidéosurveillance</p>
-            <p class="secu">Sécurité</p>
-            <p class="install"> Installation</p>
+            <div class="videosurv">
+            <img class="iconeCam" src="img/iconeCamera.png" alt="iconeCamera">
+            <p>Vidéosurveillance</p>
+            </div>
+            <div class="secu">
+                <img class="unlock" src="img/unlock.png" alt="cadenas">
+                <p>Sécurité</p>
+            </div>
+            <div class="install">
+                <img class="iconInstal" src="img/instal.png" alt="installation">
+                <p> Installation</p>
+            </div>
+            
         </div>          
         <img class="camera1" src="img/camera1.png" alt="">
     </div>
     <div class="detail">
-        <button class="contact"> contactez nous</button>
+        <button class="contact"> CONTACTEZ NOUS</button>
         <p>Notre entreprise se distingue par son professionnalisme, sa rapidité d'intervention et la qualité exceptionnelle de ses équipements.
         <br>
         <br>

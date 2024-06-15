@@ -29,16 +29,19 @@
     <div class="descript">
         <div class="wordkey">
             <div class="videosurv">
+            <div class="barre"></div>
             <img class="iconeCam" src="img/iconeCamera.png" alt="iconeCamera">
-            <p>Vidéosurveillance</p>
+            <p>VIDEOSURVEILLANCE</p>
             </div>
             <div class="secu">
+            <div class="barre"></div>
                 <img class="unlock" src="img/unlock.png" alt="cadenas">
-                <p>Sécurité</p>
+                <p>SECURITE</p>
             </div>
             <div class="install">
+            <div class="barre"></div>
                 <img class="iconInstal" src="img/instal.png" alt="installation">
-                <p> Installation</p>
+                <p>INSTALLATION</p>
             </div>
             
         </div>          
@@ -63,5 +66,6 @@
         <p class="footertitle">gnp-protect</p>
         
     </footer>
+    
 </body>
 </html>

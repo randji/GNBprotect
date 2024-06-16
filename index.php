@@ -14,7 +14,9 @@
 </head>
 <body>
     <header>
-        <p class="entreprise">GNB-PROTECT</p>
+        <div class="navbar">
+            <img class="logo" src="img/logognb.gif" alt="logo">
+        </div>
     </header>
 
     <div class="banniere">
@@ -47,6 +49,18 @@
         </div>          
         <img class="camera1" src="img/camera1.png" alt="">
     </div>
+
+    <div class="carousel">
+        <div class="carousel__track-container">
+        <img class="carousel__image" src="img/aiphone-kit-audio.png" alt="logo aiphone">
+        <img class="carousel__image" src="img/ajax-650x468.png" alt="logo ajax">
+        <img class="carousel__image" src="img/Dahua-LOGO_black_with_red_D.png" alt="logo dahua">
+        <img class="carousel__image" src="img/Legrand-Logo.jpg" alt="logo legrand">
+        <img class="carousel__image" src="img/166.png" alt="logo legrand">
+
+        </div>
+    </div>
+
     <div class="detail">
         
         <p>Notre entreprise se distingue par son professionnalisme, sa rapidité d'intervention et la qualité de ses équipements.

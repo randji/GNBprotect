@@ -88,13 +88,14 @@ main{
     margin: 0;  
 }
 .barre{
-    width: 2px;
+    width: 4px;
     height: 15px;
     visibility: hidden;
     background-color: #4A9F9A;
     margin-right: 10px;
+    border-radius: 0.5px;
     animation: barre 1s ease-in-out;
-    animation-delay: 2.5s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
 
 }
@@ -117,7 +118,7 @@ main{
     /* text-align: center; */
     /* left: 50%;
     transform: translate(-50%); */
-    animation: slideInFromRight 1.5s ease-in-out;
+    animation: slideInFromRight 1s ease-in-out;
     animation-fill-mode: forwards;
 
 }
@@ -140,7 +141,7 @@ main{
     /* text-align: center; */
     /* left: 50%;
     transform: translate(-50%); */
-    animation: slideInFromRight 1.5s ease-in-out;
+    animation: slideInFromRight 1s ease-in-out;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
@@ -163,7 +164,7 @@ main{
     /* text-align: center; */
     /* left: 50%;
     transform: translate(-50%); */
-    animation: slideInFromRight 1.5s ease-in-out ;
+    animation: slideInFromRight 1s ease-in-out ;
     animation-delay: 1s;
     animation-fill-mode: forwards;
 }
@@ -180,17 +181,16 @@ main{
     font-family: "DM Serif Display", serif; 
     color: white;
     width: 130px;
-    left: 50%;
-    transform: translate(-50%);
+    /* left: 50%; */
+    /* transform: translate(-50%); */
     background: #114744;
-/* background: linear-gradient(135deg, rgba(7,150,144,0.5) 75%, rgba(0,0,0,1) 100%); */
+
     backdrop-filter: blur(5px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 5px;
     border-radius: 5px;
-    margin-bottom: 40px;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 .detail{
     font-family: "DM Serif Display", serif; 
@@ -208,15 +208,31 @@ main{
 footer{
     grid-area: footer;
     display: flex;
-    background-image: url(img/transpat-titre-produit-alarme_0.jpg);
-    background-size: cover;
-    opacity: 80%;
+    background: linear-gradient(135deg, rgba(255, 255, 255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .footertitle{
     font-size: 30px;
     color: black;
 }
-
+.form{
+    font-family: "DM Serif Display", serif; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 @keyframes slideInFromLeft {
     0% {
         

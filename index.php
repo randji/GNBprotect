@@ -48,18 +48,37 @@
         <img class="camera1" src="img/camera1.png" alt="">
     </div>
     <div class="detail">
-        <button class="contact"> CONTACTEZ NOUS</button>
+        
         <p>Notre entreprise se distingue par son professionnalisme, sa rapidité d'intervention et la qualité de ses équipements.
         <br>
         <br>
         La sécurité de votre établissement est une priorité. Les alarmes jouent un rôle essentiel dans la prévention des vols et des dégradations, en vous offrant une protection dissuasive pour la sécurité de vos employés, de vos biens, de votre commerce et la tranquillité d’esprit.
         
-
+        <button class="contact"> CONTACTEZ NOUS</button>
     </div>
 
     <div class="gallery">
         <p>gallery</p>
     </div>
+
+    <h2>Contactez-nous</h2>
+    <form class="form" action="process_form.php" method="post">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+        
+        <label for="prenom">Prénom:</label><br>
+        <input type="text" id="prenom" name="prenom" required><br>
+        
+        <label for="telephone">Téléphone:</label>
+        <input type="tel" id="telephone" name="telephone" required><br>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="40" required></textarea><br>
+        
+        <input type="submit" value="Envoyer">
+
+
+    </form>
     </main>
     
     <footer>

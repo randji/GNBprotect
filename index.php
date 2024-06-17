@@ -50,13 +50,13 @@
         <img class="camera1" src="img/camera1.png" alt="">
     </div>
 
-    <div class="carousel">
-        <div class="carousel__track-container">
-        <img class="carousel__image" src="img/aiphone-kit-audio.png" alt="logo aiphone">
-        <img class="carousel__image" src="img/ajax-650x468.png" alt="logo ajax">
-        <img class="carousel__image" src="img/Dahua-LOGO_black_with_red_D.png" alt="logo dahua">
-        <img class="carousel__image" src="img/Legrand-Logo.jpg" alt="logo legrand">
-        <img class="carousel__image" src="img/166.png" alt="logo legrand">
+    <div class="logoMateriel">
+        <div class="materielContainer">
+        <img class="materiel__image" src="img/aiphone-kit-audio.png" alt="logo aiphone">
+        <img class="materiel__image" src="img/ajax-650x468.png" alt="logo ajax">
+        <img class="materiel__image" src="img/Dahua-LOGO_black_with_red_D.png" alt="logo dahua">
+        <img class="materiel__image" src="img/Legrand-Logo.jpg" alt="logo legrand">
+        <img class="materiel__image" src="img/166.png" alt="logo legrand">
 
         </div>
     </div>
@@ -66,13 +66,19 @@
         <p>Notre entreprise se distingue par son professionnalisme, sa rapidité d'intervention et la qualité de ses équipements.
         <br>
         <br>
-        La sécurité de votre établissement est une priorité. Les alarmes jouent un rôle essentiel dans la prévention des vols et des dégradations, en vous offrant une protection dissuasive pour la sécurité de vos employés, de vos biens, de votre commerce et la tranquillité d’esprit.
+        La sécurité de votre établissement est primordiale. Nos alarmes, à des prix compétitifs, préviennent les vols et les dégradations en protégeant efficacement vos employés, vos viens et votre commerce, tout en vous assurant une tranquillité d'esprit.
+        <br>
         
         <button class="contact"> CONTACTEZ NOUS</button>
     </div>
 
     <div class="gallery">
         <p>gallery</p>
+        <div class="slider" id="slider">
+            <img class="imgSlider" src="img/IMG-20240605-WA0010.png" alt="" id="slide">
+            <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+            <div id="suivant" onclick="ChangeSlide(1)">></div>
+        </div>
     </div>
 
     <h2>Contactez-nous</h2>
@@ -99,6 +105,6 @@
         <p class="footertitle">gnp-protect</p>
         
     </footer>
-    
+    <script src="JS/script.js"></script>
 </body>
 </html>

@@ -1,23 +1,21 @@
-function showElements() {
-    var elements = document.querySelectorAll('.videosurv, .secu, .install');
-    var windowHeight = window.innerHeight;
+const slide = ["img/IMG-20240605-WA0010.png", "img/IMG-20240605-WA0020.png", "img/IMG-20240605-WA0023.png", "img/IMG-20240605-WA0030.png"];
 
-    elements.forEach(function(element, index) {
-        var rect = element.getBoundingClientRect();
-        if (rect.top < windowHeight) {
-            var delay = index * 0.2;
+let numero = 0;
 
-            if (index % 2 === 0) {
-                element.style.animation = `slideInFromLeft 1s ${delay}s forwards`;
-            } else {
-                element.style.animation = `slideInFromRight 1s ${delay}s forwards`;
-            }
-        }
-    });
+function ChangeSlide(sens) {
+    numero = numero + sens;
+    if (numero < 0)
+        numero = slide.length - 1;
+    if (numero > slide.length - 1)
+        numero = 0;
+    let imgElement = document.getElementById("slide");
+    imgElement.classList.add("fade");
+    setTimeout(() => {
+        imgElement.src = slide[numero];
+        setTimeout(() => {
+            imgElement.classList.remove("fade");
+        }, 50);
+    }, 1000);
 }
 
-// Appeler la fonction au défilement
-// window.addEventListener('scroll', showElements);
-
-// Appeler la fonction au chargement de la page
-document.addEventListener('DOMContentLoaded', showElements);
+setInterval("ChangeSlide(1)", 4000);

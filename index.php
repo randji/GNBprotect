@@ -104,27 +104,28 @@
     <h2>Contactez-nous</h2>
     <form class="form" action="php/process_form.php" method="post">
         <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom" required><br><br>
+        <input type="text" id="nom" name="nom" required><br>
         
-        <label for="prenom">Prénom:</label><br>
+        <label for="prenom">Prénom:</label>
         <input type="text" id="prenom" name="prenom" required><br>
         
         <label for="telephone">Téléphone:</label>
         <input type="tel" id="telephone" name="telephone" required><br>
         
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" cols="40" required></textarea><br>
+        <textarea id="message" name="message" rows="4" cols="30" required></textarea><br>
         
-        <input type="submit" value="Envoyer">
+        <input class="submit" type="submit" value="Envoyer">
 
 
     </form>
     </main>
     
     <footer>
-        <p class="footertitle">gnp-protect</p>
-        
+        <img class="logoFooter" src="img/logognb.gif" alt="logo">
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="JS/script.js"></script>

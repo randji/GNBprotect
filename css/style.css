@@ -94,8 +94,9 @@ main{
     /* text-align: center; */
     font-family: "DM Serif Display", serif; 
 }
-.vidéosurv, .secu, .install{
-    margin: 0;  
+
+.wordkey p{
+    margin: 0;
 }
 .barre{
     width: 4px;
@@ -123,6 +124,8 @@ main{
     align-items: center;
     /* width: 150px; */
     padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     top: 10px;
     /* left: 20px; */
     /* text-align: center; */
@@ -146,6 +149,7 @@ main{
     align-items: center;
     /* width: 70px; */
     padding: 5px;
+    margin-bottom: 20px;
     top: 2px;
     left: 40px;
     /* text-align: center; */

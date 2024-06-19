@@ -102,7 +102,7 @@
     </div>
 
     <h2>Contactez-nous</h2>
-    <form class="form" action="process_form.php" method="post">
+    <form class="form" action="php/process_form.php" method="post">
         <label for="nom">Nom:</label>
         <input type="text" id="nom" name="nom" required><br><br>
         

@@ -101,23 +101,26 @@
             </button>
     </div>
 
-    <h2>Contactez-nous</h2>
+    
     <form class="form" action="php/process_form.php" method="post">
-        <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom" required><br>
+        <h2>CONTACTEZ-NOUS</h2>
+        <div class="surlignage"></div>
         
-        <label for="prenom">Prénom:</label>
-        <input type="text" id="prenom" name="prenom" required><br>
-        
-        <label for="telephone">Téléphone:</label>
-        <input type="tel" id="telephone" name="telephone" required><br>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" cols="30" required></textarea><br>
-        
-        <input class="submit" type="submit" value="Envoyer">
-
-
+        <div class="input">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required><br>
+            
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required><br>
+            
+            <label for="telephone">Téléphone:</label>
+            <input type="tel" id="telephone" name="telephone" required><br>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="30" required></textarea><br>
+            
+            <input class="submit" type="submit" value="Envoyer">
+        </div>
     </form>
     </main>
     

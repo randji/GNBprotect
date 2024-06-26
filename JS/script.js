@@ -1,21 +1,26 @@
-// const slide = ["img/IMG-20240605-WA0010.png", "img/IMG-20240605-WA0020.png", "img/IMG-20240605-WA0023.png", "img/IMG-20240605-WA0030.png"];
 
-// let numero = 0;
 
-// function ChangeSlide(sens) {
-//     numero = numero + sens;
-//     if (numero < 0)
-//         numero = slide.length - 1;
-//     if (numero > slide.length - 1)
-//         numero = 0;
-//     let imgElement = document.getElementById("slide");
-//     imgElement.classList.add("fade");
-//     setTimeout(() => {
-//         imgElement.src = slide[numero];
-//         setTimeout(() => {
-//             imgElement.classList.remove("fade");
-//         }, 100);
-//     }, 1000);
-// }
+document.addEventListener('DOMContentLoaded', function() {
+    var observer = new IntersectionObserver(function(entries) {
+        // Loop over les entrées
+        entries.forEach(entry => {
+            // Si l'élément est visible
+            if (entry.isIntersecting) {
+                // Ajoute la classe qui déclenche l'animation
+                entry.target.classList.add('animate-surlignage');
+                // Optionnel : arrête d'observer l'élément après la première animation
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        // Utilise 50% de la hauteur de la fenêtre comme seuil pour déclencher l'animation
+        rootMargin: '0px 0px -10% 0px'
+    });
 
-// setInterval("ChangeSlide(1)", 4000);
+    // Cible l'élément .surlignage
+    var target = document.querySelector('.surlignage');
+    if (target) {
+        // Commence à observer l'élément
+        observer.observe(target);
+    }
+});

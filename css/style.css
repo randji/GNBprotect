@@ -8,7 +8,7 @@ body{
     padding: 0;
     width: auto;
     height: 100vh;
-    grid-template-rows: 50% auto 10%;
+    grid-template-rows: 40% auto 10%;
     grid-template-areas: 
     'header'
     'main'
@@ -52,7 +52,6 @@ main{
 .imgbanniere{
     position: relative;
     height: 224px;
-    border-bottom: 1px solid rgba(95, 96, 106, 0.3);
     z-index: -1;
     
 }
@@ -66,7 +65,7 @@ main{
     margin-top: 50px;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 50px; 
+    margin-bottom: 100px; 
 }
 .slogan{
     font-size: 30px;
@@ -84,14 +83,13 @@ main{
     display: flex;
     flex-direction: row;
     height: 200px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 
 }
 .wordkey{
     margin: 0;
     padding-top: 28px;
     padding-left: 35px;
-    /* text-align: center; */
     font-family: "DM Serif Display", serif; 
 }
 
@@ -122,15 +120,10 @@ main{
     visibility: hidden;
     flex-direction: row;
     align-items: center;
-    /* width: 150px; */
     padding: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
     top: 10px;
-    /* left: 20px; */
-    /* text-align: center; */
-    /* left: 50%;
-    transform: translate(-50%); */
     animation: slideInFromRight 1s ease-in-out;
     animation-fill-mode: forwards;
 
@@ -147,14 +140,10 @@ main{
     visibility: hidden;
     flex-direction: row;
     align-items: center;
-    /* width: 70px; */
     padding: 5px;
     margin-bottom: 20px;
     top: 2px;
     left: 40px;
-    /* text-align: center; */
-    /* left: 50%;
-    transform: translate(-50%); */
     animation: slideInFromRight 1s ease-in-out;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
@@ -175,9 +164,6 @@ main{
     padding: 5px;
     top: -5px;
     left: 65px;
-    /* text-align: center; */
-    /* left: 50%;
-    transform: translate(-50%); */
     animation: slideInFromRight 1s ease-in-out ;
     animation-delay: 1s;
     animation-fill-mode: forwards;
@@ -208,7 +194,7 @@ main{
 }
 .materiel__image{
     width: 80px;
-    margin: 20px;
+    margin: 40px;
 }
 .materielContainer{
     display: flex;
@@ -217,14 +203,7 @@ main{
     justify-content: center;
     margin-bottom: 80px;
 }
-.gallery{
-    /* background: linear-gradient(135deg, rgba(255, 255, 255,0.1), rgba(255,255,255,0));
-    backdrop-filter: blur(5px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18); */
-    margin-left: 10%;
-    margin-right: 10%;
-}
+
 .detail{
     font-family: "DM Serif Display", serif; 
     display: flex;
@@ -236,9 +215,65 @@ main{
     border-radius: 5px;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 80px;
+    margin-bottom: 180px;
+}
+.temoignage{
+    margin-bottom: 150px;
+    margin-top: 150px;
+    
+    /* background-color: #222325;
+    border: 1px solid rgb(95, 96, 106);
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden; */
+}
+.main{
+    width: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 40px;
+}
+.titreT{
+    font-family: "DM Serif Display", serif; 
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.tag-list{
+    width: 30rem;
+    font-family: "DM Serif Display", serif;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.inner{
+    width: fit-content;
+    display: flex;
+    flex-direction: wrap;
+    gap: 1rem;
+    animation: loop 15s linear infinite;
+}
+.tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 250px;
+    gap: 0 0.2rem;
+    color: #e2e8f0;
+    font-size: 25px;
+    background: linear-gradient(135deg, rgba(255, 255, 255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    padding: 0.7rem 1rem;
     
 }
+
 
 .form{
     background-image: url('../img/Fichier2.png');
@@ -312,6 +347,21 @@ footer{
     width: 80px;
     margin: 10px;
 }
+
+/* ------------------keyframes------------------- */
+
+
+
+@keyframes loop {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
 @keyframes slideInFromLeft {
     0% {
         

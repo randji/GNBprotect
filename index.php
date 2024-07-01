@@ -101,6 +101,31 @@
             </button>
     </div>
 
+    <div class="temoignage">
+        <h1 class="titreT">ils nous ont fait confiance</h1>
+        <img class="main" src="img/poignee-de-main.png" alt="">
+        <ul class="tag-list">
+            <div class="inner">
+            <li class="tag">L'artisant du regard</li>
+            <li class="tag">Forum éclairage</li>
+            <li class="tag">Stone kid's</li>
+            <li class="tag">Scm Oximed</li>
+            <li class="tag">Okam santé</li><br>
+            <li class="tag">Boutique onze</li>
+            <li class="tag">Silver store</li>
+            <li class="tag">L2N pharma</li>
+            <li class="tag">L'artisant du regard</li>
+            <li class="tag">Forum éclairage</li>
+            <li class="tag">Stone kid's</li>
+            <li class="tag">Scm Oximed</li>
+            <li class="tag">Okam santé</li>
+            <li class="tag">Boutique onze</li>
+            <li class="tag">Silver store</li>
+            <li class="tag">L2N pharma</li>
+            </div>
+        </ul>
+    </div>
+
     
     <form class="form" action="php/process_form.php" method="post">
         <h2>CONTACTEZ-NOUS</h2>

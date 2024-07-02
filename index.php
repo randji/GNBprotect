@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -147,13 +151,34 @@
             <input class="submit" type="submit" value="Envoyer">
         </div>
     </form>
+
+            <!-- Pop-up de succès -->
+        <div id="successPopup" >
+            <span id="successMessage">Email envoyé avec succès.</span>
+            <button onclick="closePopup()">Fermer</button>
+        </div>
     </main>
     
     <footer>
         <img class="logoFooter" src="img/logognb.gif" alt="logo">
     </footer>
 
+    <footer>
+        <img class="logoFooter" src="img/logognb.gif" alt="logo">
+    </footer>
+    
 
+    // Vérifiez si le message de succès est défini et affichez le pop-up
+    <script>
+
+        <?php if (isset($_SESSION['message_success'])): ?>
+        showPopup();
+       
+        <?php unset($_SESSION['message_success']); ?>
+        <?php endif; ?>
+
+    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="JS/script.js"></script>

@@ -1,4 +1,12 @@
 
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body{
     box-sizing: border-box;
@@ -331,6 +339,17 @@ main{
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 5px;
     border-radius: 5px;
+}
+
+#successPopup{
+    display:none; 
+    position:fixed; 
+    top:20%; 
+    left:50%; transform:translate(-50%, -50%); 
+    background-color:white; 
+    padding:20px; 
+    border-radius:10px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 footer{

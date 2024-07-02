@@ -24,3 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(target);
     }
 });
+
+
+// Fonction pour afficher le pop-up
+function showPopup() {
+    document.getElementById('successPopup').style.display = 'block';
+}
+
+// Fonction pour fermer le pop-up
+function closePopup() {
+    document.getElementById('successPopup').style.display = 'none';}

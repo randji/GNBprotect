@@ -23,6 +23,12 @@ session_start();
     <header>
         <div class="navbar">
             <img class="logo" src="img/logognb.gif" alt="logo">
+            <div class= reseauSociaux>
+                <img class="reseau" src="img/facebook_fb_media_social_icon_124262.png" alt="icon facebook">
+                <img class="reseau" src="img/twitter.png" alt="icon twitter">
+                <img class="reseau" src="img/instagram_f_icon-icons.com_65485.png" alt="icon facebook">
+            </div>
+            
         </div>
     </header>
 
@@ -79,6 +85,25 @@ session_start();
         <button class="contact"> CONTACTEZ NOUS</button>
     </div>
 
+    <div class="temoignage">
+        <h1 class="titreT">ils nous ont fait confiance</h1>
+        <img class="main" src="img/poignee-de-main.png" alt="">
+        <ul class="tag-list">
+            <div class="inner">
+            <li class="tag">L'artisant du regard</li>
+            <li class="tag">Forum éclairage</li>
+            <li class="tag">Stone kid's</li>
+            <li class="tag">Scm Oximed</li>  
+            </div>
+            <div class="inner2">
+            <li class="tag">Okam santé</li><br>
+            <li class="tag">Boutique onze</li>
+            <li class="tag">Silver store</li>
+            <li class="tag">L2N pharma</li>
+            </div>
+        </ul>
+    </div>
+
     <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
         
         <div class="carousel-inner">
@@ -105,30 +130,7 @@ session_start();
             </button>
     </div>
 
-    <div class="temoignage">
-        <h1 class="titreT">ils nous ont fait confiance</h1>
-        <img class="main" src="img/poignee-de-main.png" alt="">
-        <ul class="tag-list">
-            <div class="inner">
-            <li class="tag">L'artisant du regard</li>
-            <li class="tag">Forum éclairage</li>
-            <li class="tag">Stone kid's</li>
-            <li class="tag">Scm Oximed</li>
-            <li class="tag">Okam santé</li><br>
-            <li class="tag">Boutique onze</li>
-            <li class="tag">Silver store</li>
-            <li class="tag">L2N pharma</li>
-            <li class="tag">L'artisant du regard</li>
-            <li class="tag">Forum éclairage</li>
-            <li class="tag">Stone kid's</li>
-            <li class="tag">Scm Oximed</li>
-            <li class="tag">Okam santé</li>
-            <li class="tag">Boutique onze</li>
-            <li class="tag">Silver store</li>
-            <li class="tag">L2N pharma</li>
-            </div>
-        </ul>
-    </div>
+
 
     
     <form class="form" action="php/process_form.php" method="post">

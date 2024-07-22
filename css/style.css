@@ -47,6 +47,13 @@ header{
 }
 .logo{
     width: 50px;
+    
+    
+}
+.reseau{
+    width: 20px;
+    /* padding: 20px; */
+    margin: 10px;
 }
 main{
     grid-area: main;
@@ -228,7 +235,13 @@ main{
 .temoignage{
     margin-bottom: 150px;
     margin-top: 150px;
-    
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url('../img/Fichier2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
     /* background-color: #222325;
     border: 1px solid rgb(95, 96, 106);
     border-radius: 5px;
@@ -257,12 +270,16 @@ main{
     overflow: hidden;
     margin-bottom: 50px;
 }
-.inner{
+.inner, .inner2{
     width: fit-content;
     display: flex;
-    flex-direction: wrap;
+    /* flex-direction: wrap; */
     gap: 1rem;
     animation: loop 15s linear infinite;
+}
+.inner2{
+    margin-top: 20px;
+    margin-left: 0;
 }
 .tag{
     display: flex;
@@ -270,13 +287,13 @@ main{
     justify-content: center;
     flex-direction: row;
     width: 250px;
-    gap: 0 0.2rem;
+    /* gap: 0 0.2rem; */
     color: #e2e8f0;
     font-size: 25px;
     background: linear-gradient(135deg, rgba(255, 255, 255,0.1), rgba(255,255,255,0));
     backdrop-filter: blur(5px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid #297D78;
     border-radius: 10px;
     padding: 0.7rem 1rem;
     

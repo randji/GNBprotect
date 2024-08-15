@@ -19,3 +19,53 @@
     align-content: center;
     
 }
+
+/* ---temoignage------ */
+.marquee-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.marquee {
+    display: flex;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-content {
+    display: flex;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.review-card img {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.review-card p {
+    color: black;
+    margin: 5px 0;
+}
+
+.review-card blockquote {
+    font-style: italic;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}

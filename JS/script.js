@@ -34,3 +34,13 @@ function showPopup() {
 // Fonction pour fermer le pop-up
 function closePopup() {
     document.getElementById('successPopup').style.display = 'none';}
+
+    
+    document.querySelectorAll('.marquee').forEach(marquee => {
+        marquee.addEventListener('mouseover', () => {
+            marquee.style.animationPlayState = 'paused';
+        });
+        marquee.addEventListener('mouseout', () => {
+            marquee.style.animationPlayState = 'running';
+        });
+    });

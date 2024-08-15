@@ -9,3 +9,6 @@ function closePopup() {
 }
 
 // Vérifiez si le message de succès est défini et affichez le pop-up
+if (window.location.search.includes('success=true')) {
+    showPopup();
+}

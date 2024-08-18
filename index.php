@@ -18,7 +18,7 @@ session_start();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="css/mediaqueries/smalldestop.css">
    
     <title>GNB-PROTECT</title>
 </head>
@@ -88,66 +88,35 @@ session_start();
         <button class="contact"> CONTACTEZ NOUS</button>
     </div>
 
-    <!--<div class="marquee-container">
-    <div class="marquee">
-        <div class="marquee-content">
-            <div class="review-card">
-                <div>
-                    <p>L'artisant du regard</p>
-                </div>
-            </div>
-            <div class="review-card">
-                <div>
-                    <p>Forum éclairage</p>
-                </div>
-            </div>
-            <div class="review-card">
-                <div>
-                    <p>Stone kid's</p>
-                </div>
-            </div>
-            <div class="review-card">
-                <div>
-                    <p>Scm Oximed</p>
-                </div>
-            </div>
-            <div class="review-card">
-                <div>
-                    <p>Forum éclairage</p>
-                </div>
-            </div>
-            <div class="review-card">
-                <img src="https://avatar.vercel.sh/jill" alt="Jill">
-                <div>
-                    <p>Jill</p>
-                    <p>@jill</p>
-                    <blockquote>I don't know what to say. I'm speechless. This is amazing.</blockquote>
-                </div>
-            </div>
-            
-           
-        </div>
-    </div>
-</div>-->
-
 
     <div class="temoignage">
     <h1 class="titreT">ils nous ont fait confiance</h1>
         <img class="main" src="img/poignee-de-main.png" alt="">
-        <ul class="tag-list">
-            <div class="inner">
-            <li class="tag">L'artisant du regard</li>
-            <li class="tag">Forum éclairage</li>
-            <li class="tag">Stone kid's</li>
-            <li class="tag">Scm Oximed</li>  
-            </div>
-            <div class="inner2">
-            <li class="tag">Okam santé</li><br>
-            <li class="tag">Boutique onze</li>
-            <li class="tag">Silver store</li>
-            <li class="tag">L2N pharma</li>
-            </div>
-        </ul>
+        <div class="listTemoi">
+            <ul class="tag-list">
+                <div class="inner">
+                    <li class="tag">L'artisant du regard</li>
+                    <li class="tag">Forum éclairage</li>
+                    <li class="tag">Stone kid's</li>
+                    <li class="tag">Scm Oximed</li>
+                    <li class="tag">L'artisant du regard</li>
+                    <li class="tag">Forum éclairage</li>
+                    <li class="tag">Stone kid's</li>
+                    <li class="tag">Scm Oximed</li>  
+                </div>
+                <div class="inner2">
+                    <li class="tag">Okam santé</li><br>
+                    <li class="tag">Boutique onze</li>
+                    <li class="tag">Silver store</li>
+                    <li class="tag">L2N pharma</li>
+                    <li class="tag">Okam santé</li><br>
+                    <li class="tag">Boutique onze</li>
+                    <li class="tag">Silver store</li>
+                    <li class="tag">L2N pharma</li>
+                </div>
+            </ul>
+        </div>
+        
     </div>
 
         

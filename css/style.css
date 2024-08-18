@@ -402,10 +402,12 @@ footer{
     height: 40px;
 }
 .logoTel{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+}
+.logoMail{
+    margin-bottom: 10px;
 }
 .mail{
-    
     font-size: 15px;
 }
 .tel{

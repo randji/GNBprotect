@@ -210,15 +210,24 @@ session_start();
     </main>
     
     <footer>
-        <a href="tel:+33628716282">06 28 71 62 82</a>
-        <img class="logoFooter" src="img/logognb.gif" alt="logo">
-        <a href="mailto:gnb.protect@gmail.com">gnb.protect@gmail.com</a>
+        <div class="contTel">
+            <img class="logoTel" src="img/smartphone-call.png" alt="logo">
+            <a class="tel" href="tel:+33628716282">06 28 71 62 82</a>
+        </div>
+        <div class="contLogo">
+            <img class="logoFooter" src="img/logognb.gif" alt="logo">
+        </div>
+        <div class="contMail">
+            <img class="logoMail" src="img/email.png" alt="logo">
+            <a class="mail" href="mailto:gnb.protect@gmail.com">gnb.protect@gmail.com</a>
+        </div>
+        
     </footer>
 
     
     
 
-    // Vérifiez si le message de succès est défini et affichez le pop-up
+    
     <script>
 
         <?php if (isset($_SESSION['message_success'])): ?>

@@ -10,6 +10,7 @@
 a{
     text-decoration: none;
     color : white;
+    font-size: 20px;
     font-family: "DM Serif Display", serif;
 }
 
@@ -21,7 +22,7 @@ body{
     padding: 0;
     width: 100%;
     height: 100vh;
-    grid-template-rows: 40% auto 10%;
+    grid-template-rows: 40% auto 20%;
     grid-template-areas: 
     'header'
     'main'
@@ -275,16 +276,18 @@ main{
     overflow: hidden;
     margin-bottom: 50px;
 }
-.inner, .inner2{
+.inner{
     width: fit-content;
     display: flex;
-    /* flex-direction: wrap; */
+    margin-bottom: 1rem;
     gap: 1rem;
     animation: loop 15s linear infinite;
 }
 .inner2{
-    margin-top: 20px;
-    margin-left: 0;
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    animation: loop2 15s linear infinite;
 }
 .tag{
     display: flex;
@@ -377,17 +380,37 @@ main{
 footer{
     grid-area: footer;
     display: flex;
-    justify-content: center;
-    height: 100px;
+    height: 100%;
     background: linear-gradient(135deg, rgba(255, 255, 255,0.1), rgba(255,255,255,0));
     backdrop-filter: blur(5px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.logoFooter{
-    position: relative;
-    width: 80px;
-    margin: 10px;
+.contTel, .contLogo, .contMail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+}
+.logoFooter{   
+    width: 100px;
+}
+.logoMail, .logoTel{
+    width: 40px;
+    height: 40px;
+}
+.logoTel{
+    margin-bottom: 5px;
+}
+.mail{
+    
+    font-size: 15px;
+}
+.tel{
+    
+    font-size: 15px;
 }
 
 /* ------------------keyframes------------------- */
@@ -400,6 +423,15 @@ footer{
     }
     100% {
       transform: translateX(-50%);
+    }
+  }
+
+  @keyframes loop2 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
     }
   }
 

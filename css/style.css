@@ -7,9 +7,14 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color : white;
+    font-family: "DM Serif Display", serif;
+}
 
 body{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: grid;
     background-color: #121212;
     margin: 0;
@@ -380,6 +385,7 @@ footer{
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .logoFooter{
+    position: relative;
     width: 80px;
     margin: 10px;
 }

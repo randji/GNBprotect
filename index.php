@@ -210,12 +210,12 @@ session_start();
     </main>
     
     <footer>
+        <a href="tel:+33628716282">06 28 71 62 82</a>
         <img class="logoFooter" src="img/logognb.gif" alt="logo">
+        <a href="mailto:gnb.protect@gmail.com">gnb.protect@gmail.com</a>
     </footer>
 
-    <footer>
-        <img class="logoFooter" src="img/logognb.gif" alt="logo">
-    </footer>
+    
     
 
     // Vérifiez si le message de succès est défini et affichez le pop-up

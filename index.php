@@ -41,7 +41,7 @@ session_start();
     <main>
     <div class="title">
         <p class="slogan">GNB-PROTECT </p>
-        <p class="slogan1"> votre partenaire de confiance pour l'installation de matériel de surveillance</p>
+        <p class="slogan1"> votre partenaire de confiance pour l'installation de votre matériel de surveillance</p>
     </div>
 
     <div class="descript">

@@ -8,6 +8,12 @@ use PHPMailer\PHPMailer\Exception;
 require '../vendor/autoload.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    // Vérifier si le formulaire a déjà été soumis
+    if (isset($_SESSION['form_submitted']) && $_SESSION['form_submitted'] === true) {
+        echo "Formulaire déjà soumis.";
+        exit();
+    }
     // Récupérer les données du formulaire
     $nom = htmlspecialchars($_POST['nom']);
     $prenom = htmlspecialchars($_POST['prenom']);
@@ -38,8 +44,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body    = "Nom: $nom<br>Prénom: $prenom<br>Téléphone: $telephone<br>Message:<br>$message";
 
         $mail->send();
-        $_session['message_success'] = "Email bien envoyé";
+        $_SESSION['message_success'] = "Votre message a bien été envoyé";
 
+        // Marquer le formulaire comme soumis
+        $_SESSION['form_submitted'] = true;
+        
+        header('Location: ../index.php?success=true');
+        exit();
     } catch (Exception $e) {
         echo "Échec de l'envoi de l'email. Mailer Error: {$mail->ErrorInfo}";
     }

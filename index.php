@@ -172,9 +172,9 @@ session_start();
     </form>
 
             <!-- Pop-up de succès -->
-        <div id="successPopup" >
-            <span id="successMessage">Email envoyé avec succès.</span>
-            <button onclick="closePopup()">Fermer</button>
+        <div id="successPopup">
+            <span id="successMessage">Votre message a bien été envoyé.</span> <br>
+            <button class="close" onclick="closePopup()">Fermer</button>
         </div>
     </main>
     
@@ -193,18 +193,11 @@ session_start();
         
     </footer>
 
-    
-    
-
-    
     <script>
-
         <?php if (isset($_SESSION['message_success'])): ?>
-        showPopup();
-       
+            document.getElementById('successPopup').style.display = 'flex';
         <?php unset($_SESSION['message_success']); ?>
         <?php endif; ?>
-
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
